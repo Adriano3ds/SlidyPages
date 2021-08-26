@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SlidePages Demo</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../slidypages.css">
+</head>
+<body class="green">
+	<div id="slidy-container" attr-page="0">
+		<div class="slidy-page gradient col">
+			<h1 class="title">SlidyPages</h1>
+			<p class="description">Full page presentation-like with a vertical scroll</p>
+		</div>
+		<div class="slidy-page red col">
+			<p>SlidyPages allows you to create full pages with a vertical scroll by using the script and CSS with a basic HTML model.</p>
+			<p>The basic HTML, the script and the CSS stylesheet can be found on the github repo.</p>
+		</div>
+		<div class="slidy-page blue col">
+			<p>You can use different backgrounds per page, like all the pages so far...</p>
+		</div>
+		<div class="slidy-page col">
+			<p>Also, you can set a background color for the body, and it will appear in every page without a set color, like this and...</p>
+		</div>
+		<div class="slidy-page col">
+			<p>... this! I have the same color as the body and the previous page!</p>
+		</div>
+		<div class="purple">
+			<div class="slidy-page col">
+				<p>The slidy-container class has an attribute called "attr-page", which tracks the current page.</p>
+				<p>You can use this to customize the navigation and pagination buttons in certain pages with CSS. Check it on the next page! </p>
+			</div>
+			<div class="slidy-page col">
+				<p>This page changes the "go up" button to gold and adds an animation to it.</p>
+				<p>The pagination selector is set to red on the unselected pages and orange to the selected one.</p>
+				<p>By the way, this page and the last one also share a common continuous background.</p>
+				<p class="ending">⛷️Slid<s>e</s>y Safely!🏂</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+	<script src="../slidypages.js"></script>
+	<script>
+		SlidyPages({
+			pages: 7
+		});
+	</script>
+</body>
+</html>
