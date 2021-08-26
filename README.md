@@ -3,6 +3,7 @@
 Full page presentation-like with a vertical scroll
 
 ---
+![https://www.jsdelivr.com/package/npm/smoothscroll-polyfill](https://badgen.net/badge/dependency/smoothscroll@iamdustin/gray?icon=github)
 
 SlidyPages allows you to create fullpages with a vertical scroll by using the script and css with a basic html model.
 
@@ -10,6 +11,8 @@ The basic html, the script and the CSS stylesheet can be found down below. Also,
 
 
 ## Basic Usage
+
+You'll need to import the SmoothScroll by [iamdustan](https://github.com/iamdustan/smoothscroll/). You can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/smoothscroll-polyfill) or host the file yourself.
 
 Just download the `slidypages.css` and `slidepages.js`, put them wherever you want, import them to your HTML, and you're ready to go!
 
@@ -23,7 +26,6 @@ The Basic HTML is the following.
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SlidePages Demo</title>
-	<script src="slidypages.js"></script>
 	<link rel="stylesheet" href="slidypages.css">
 </head>
 <body class="green">
@@ -39,6 +41,8 @@ The Basic HTML is the following.
 		</div>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+	<script src="slidypages.js"></script>
 	<script>
 		SlidyPages({
 			//Set the number of pages
