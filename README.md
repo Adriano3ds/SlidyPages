@@ -7,7 +7,7 @@ Full page presentation-like with a vertical scroll
 
 SlidyPages allows you to create fullpages with a vertical scroll by using the script and css with a basic html model.
 
-The basic html, the script and the CSS stylesheet can be found down below. Also, there is an example in the "example" folder that's the same of [slidypages.github.io](slidypages.github.io).
+The basic html, the script and the CSS stylesheet can be found down below. Also, there is an example in the "example" folder that's the same of [https://adriano3ds.github.io/SlidyPages/](https://adriano3ds.github.io/SlidyPages/).
 
 
 ## Basic Usage
