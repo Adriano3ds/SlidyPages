@@ -216,11 +216,22 @@ function SlidyPages({pages, touchThreshold}) {
 		window.addEventListener('touchend', touchEnd, false);
 	}
 
+	function updateOffset(){
+		let e = document.createElement('div');
+		e.style.cssText = 'position: fixed; top: 0; height: 100vh; pointer-events: none';
+		document.documentElement.insertBefore(e, document.documentElement.firstChild);
+		let offset = e.offsetHeight - window.innerHeight;
+		document.documentElement.removeChild(e);
+		document.documentElement.style.setProperty('--vh-offset', offset + 'px');
+	}
+
 	window.addEventListener('resize', (event) => {
+		updateOffset();
 		let currentPage = updatePagination();
 		scrollAction(currentPage);
 	});
 
+	updateOffset();
 	addButtons();
 	addPagination();
 	disableScroll();
